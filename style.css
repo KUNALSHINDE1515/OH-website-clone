@@ -52,6 +52,11 @@
     max-width: 564px;
     text-align: center;
 }
+@media(max-width:500px){
+    .main-container h1{
+        font-size: 30px;
+    }
+}
 
 /* desinging main bottom section */
 .main-bottom-section{
@@ -147,6 +152,7 @@
     .end-items h3{
         font-size: 20px;
     }
+    
 }
 @media(max-width:390px){
     .footer{
