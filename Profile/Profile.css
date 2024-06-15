@@ -183,4 +183,14 @@
     .experinces-columns{
         grid-template-columns: repeat(1, 100%);
     }
+    .paregraph{
+        padding-top: 20px;
+        width: 100%;
+        font-weight: 600;
+        line-height: 1.2rem;
+    }
+    .paregraph p{
+        font-size: 20px;
+        text-align: center;
+    }
 }
