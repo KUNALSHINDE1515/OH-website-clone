@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
-    /* max-width: 1400px; */
+    max-width: 100%;
 }
 
 .nav-bar-containt{
@@ -39,4 +39,148 @@
 }
 .profile-box {
     background-color: white;
+}
+
+/* designing profile section */
+
+.main-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;
+    flex-direction: column;
+    text-align: center;
+    margin-inline: 25px;
+}
+.hi-image{
+    height: 60px;
+    padding-inline: 20px;
+}
+.main-container{
+    font-size: 1.5rem;
+    /* font-family: cursive; */
+}
+
+/* designing image section */
+.main-image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-flow: column; */
+    gap: 20px;
+    /* width: 70%; */
+}
+.main-image-container img{
+   
+    width: 40%; 
+    border-radius: 24px;
+    height: 420px;
+}
+
+@media(max-width:750px){
+    .main-image-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .main-image-container img{
+        width: 90%;
+        height: 300px;
+    }
+    .second-img{
+        display: none;
+    }
+    .main-image-container img {
+        margin-inline: 25px;
+        margin-top: 10px;
+    }
+   
+}
+
+/* about section styling  & experiance section styling*/
+.about-section{
+    padding: 40px 40px;
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    margin-bottom: 20px;
+}
+.about-heading{
+    background-color: #F3F2F1;
+    border-radius: 24px;
+}
+.about-heading h3{
+    padding: 10px 20px;
+    font-weight: 400;
+}
+.paregraph{
+    padding-top: 20px;
+    width: 60%;
+    font-weight: 600;
+    line-height: 1.9rem;
+}
+.paregraph p{
+    font-size: 28px;
+    text-align: center;
+}
+
+
+/* experincess columns grid section start */
+
+.experinces-columns{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: repeat(3, 30%);
+    grid-template-rows: repeat(4, 200px);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* desindning  box of experince column */
+.box{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    padding:20px;
+}
+.box p {
+    padding: 7px;
+}
+
+/* each item p */
+.date{
+    color: #8D8484;
+    font-weight: 400;
+    font-size: 17px;
+}
+.company{
+    font-size: 22px;
+    font-weight: 600;
+    color: black;
+}
+.btn span{
+    margin-top: 10px;
+    background-color:  #F3F2F1;
+    border-radius: 14px; 
+    padding: 10px 20px;
+}
+
+/* media quries for grid */
+@media(max-width:850px){
+    .experinces-columns{
+        grid-template-columns: repeat(2, 30%);
+    }
+}
+
+@media(max-width:650px){
+    .experinces-columns{
+        grid-template-columns: repeat(1, 30%);
+    }
 }
