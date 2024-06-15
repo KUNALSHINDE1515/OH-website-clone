@@ -37,6 +37,9 @@
 .box:hover{
     background-color: white;
 }
+.Home-box {
+    background-color: white;
+}
 
 /* main container designing */
 .main-container{
@@ -145,6 +148,13 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
+ 
+}
+.icons a{
+    text-decoration: none;
+}
+.textlink{
+    color: black;
 }
 
 /* last media query */
