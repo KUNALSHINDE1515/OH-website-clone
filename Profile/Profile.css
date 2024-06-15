@@ -181,6 +181,6 @@
 
 @media(max-width:650px){
     .experinces-columns{
-        grid-template-columns: repeat(1, 30%);
+        grid-template-columns: repeat(1, 100%);
     }
 }
