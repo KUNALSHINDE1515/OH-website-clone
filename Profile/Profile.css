@@ -166,6 +166,9 @@
     font-weight: 600;
     color: black;
 }
+/* .btn{
+    
+} */
 .btn span{
     margin-top: 10px;
     background-color:  #F3F2F1;
@@ -187,7 +190,7 @@
     }
 }
 
-@media(max-width:340px){
+@media(max-width:500px){
     .experinces-columns{
         grid-template-columns: repeat(1, 100%);
         grid-template-rows: repeat(12, 300px);
